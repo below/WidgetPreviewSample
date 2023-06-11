@@ -19,14 +19,14 @@
 		CB14AE922A3629C600CA596B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB14AE912A3629C600CA596B /* WidgetKit.framework */; };
 		CB14AE942A3629C600CA596B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB14AE932A3629C600CA596B /* SwiftUI.framework */; };
 		CB14AE972A3629C600CA596B /* AppWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB14AE962A3629C600CA596B /* AppWidgetBundle.swift */; };
-		CB14AE992A3629C600CA596B /* AppWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB14AE982A3629C600CA596B /* AppWidget.swift */; };
+		CB14AE992A3629C600CA596B /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB14AE982A3629C600CA596B /* Widget.swift */; };
 		CB14AE9B2A3629C700CA596B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB14AE9A2A3629C700CA596B /* Assets.xcassets */; };
 		CB14AE9F2A3629C700CA596B /* AppWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CB14AE8F2A3629C600CA596B /* AppWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CB14AEA92A362A0100CA596B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB14AE912A3629C600CA596B /* WidgetKit.framework */; };
 		CB14AEAA2A362A0100CA596B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB14AE932A3629C600CA596B /* SwiftUI.framework */; };
-		CB14AEAD2A362A0100CA596B /* WatchWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB14AEAC2A362A0100CA596B /* WatchWidget.swift */; };
 		CB14AEAF2A362A0100CA596B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB14AEAE2A362A0100CA596B /* Assets.xcassets */; };
 		CB14AEB32A362A0100CA596B /* WatchWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CB14AEA82A362A0000CA596B /* WatchWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CB14AEB82A3632CE00CA596B /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB14AE982A3629C600CA596B /* Widget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,11 +104,10 @@
 		CB14AE912A3629C600CA596B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		CB14AE932A3629C600CA596B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		CB14AE962A3629C600CA596B /* AppWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWidgetBundle.swift; sourceTree = "<group>"; };
-		CB14AE982A3629C600CA596B /* AppWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWidget.swift; sourceTree = "<group>"; };
+		CB14AE982A3629C600CA596B /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
 		CB14AE9A2A3629C700CA596B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB14AE9C2A3629C700CA596B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB14AEA82A362A0000CA596B /* WatchWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WatchWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB14AEAC2A362A0100CA596B /* WatchWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchWidget.swift; sourceTree = "<group>"; };
 		CB14AEAE2A362A0100CA596B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB14AEB02A362A0100CA596B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -223,7 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				CB14AE962A3629C600CA596B /* AppWidgetBundle.swift */,
-				CB14AE982A3629C600CA596B /* AppWidget.swift */,
+				CB14AE982A3629C600CA596B /* Widget.swift */,
 				CB14AE9A2A3629C700CA596B /* Assets.xcassets */,
 				CB14AE9C2A3629C700CA596B /* Info.plist */,
 			);
@@ -233,7 +232,6 @@
 		CB14AEAB2A362A0100CA596B /* WatchWidget */ = {
 			isa = PBXGroup;
 			children = (
-				CB14AEAC2A362A0100CA596B /* WatchWidget.swift */,
 				CB14AEAE2A362A0100CA596B /* Assets.xcassets */,
 				CB14AEB02A362A0100CA596B /* Info.plist */,
 			);
@@ -423,7 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB14AE972A3629C600CA596B /* AppWidgetBundle.swift in Sources */,
-				CB14AE992A3629C600CA596B /* AppWidget.swift in Sources */,
+				CB14AE992A3629C600CA596B /* Widget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB14AEAD2A362A0100CA596B /* WatchWidget.swift in Sources */,
+				CB14AEB82A3632CE00CA596B /* Widget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

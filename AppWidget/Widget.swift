@@ -66,7 +66,7 @@ struct AppWidget: Widget {
     }
 }
 
-#Preview(as: .systemSmall) {
+#Preview(as: .accessoryRectangular) {
     AppWidget()
 } timeline: {
     SimpleEntry(date: .now, emoji: "😀")
