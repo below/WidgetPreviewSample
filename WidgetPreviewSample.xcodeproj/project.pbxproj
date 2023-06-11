@@ -16,6 +16,12 @@
 		CB14AE7C2A36298B00CA596B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB14AE7B2A36298B00CA596B /* ContentView.swift */; };
 		CB14AE7E2A36298C00CA596B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB14AE7D2A36298C00CA596B /* Assets.xcassets */; };
 		CB14AE812A36298C00CA596B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB14AE802A36298C00CA596B /* Preview Assets.xcassets */; };
+		CB14AE922A3629C600CA596B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB14AE912A3629C600CA596B /* WidgetKit.framework */; };
+		CB14AE942A3629C600CA596B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB14AE932A3629C600CA596B /* SwiftUI.framework */; };
+		CB14AE972A3629C600CA596B /* AppWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB14AE962A3629C600CA596B /* AppWidgetBundle.swift */; };
+		CB14AE992A3629C600CA596B /* AppWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB14AE982A3629C600CA596B /* AppWidget.swift */; };
+		CB14AE9B2A3629C700CA596B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB14AE9A2A3629C700CA596B /* Assets.xcassets */; };
+		CB14AE9F2A3629C700CA596B /* AppWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CB14AE8F2A3629C600CA596B /* AppWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +31,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = CB14AE732A36298B00CA596B;
 			remoteInfo = "WidgetPreviewSample Watch App";
+		};
+		CB14AE9D2A3629C700CA596B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB14AE5C2A36298A00CA596B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB14AE8E2A3629C600CA596B;
+			remoteInfo = AppWidgetExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -40,6 +53,17 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB14AEA32A3629C700CA596B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CB14AE9F2A3629C700CA596B /* AppWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +77,13 @@
 		CB14AE7B2A36298B00CA596B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CB14AE7D2A36298C00CA596B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB14AE802A36298C00CA596B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB14AE8F2A3629C600CA596B /* AppWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AppWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB14AE912A3629C600CA596B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		CB14AE932A3629C600CA596B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		CB14AE962A3629C600CA596B /* AppWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWidgetBundle.swift; sourceTree = "<group>"; };
+		CB14AE982A3629C600CA596B /* AppWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWidget.swift; sourceTree = "<group>"; };
+		CB14AE9A2A3629C700CA596B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB14AE9C2A3629C700CA596B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +101,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB14AE8C2A3629C600CA596B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB14AE942A3629C600CA596B /* SwiftUI.framework in Frameworks */,
+				CB14AE922A3629C600CA596B /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +118,8 @@
 			children = (
 				CB14AE662A36298B00CA596B /* WidgetPreviewSample */,
 				CB14AE782A36298B00CA596B /* WidgetPreviewSample Watch App */,
+				CB14AE952A3629C600CA596B /* AppWidget */,
+				CB14AE902A3629C600CA596B /* Frameworks */,
 				CB14AE652A36298B00CA596B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +129,7 @@
 			children = (
 				CB14AE642A36298B00CA596B /* WidgetPreviewSample.app */,
 				CB14AE742A36298B00CA596B /* WidgetPreviewSample Watch App.app */,
+				CB14AE8F2A3629C600CA596B /* AppWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +172,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CB14AE902A3629C600CA596B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB14AE912A3629C600CA596B /* WidgetKit.framework */,
+				CB14AE932A3629C600CA596B /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB14AE952A3629C600CA596B /* AppWidget */ = {
+			isa = PBXGroup;
+			children = (
+				CB14AE962A3629C600CA596B /* AppWidgetBundle.swift */,
+				CB14AE982A3629C600CA596B /* AppWidget.swift */,
+				CB14AE9A2A3629C700CA596B /* Assets.xcassets */,
+				CB14AE9C2A3629C700CA596B /* Info.plist */,
+			);
+			path = AppWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,11 +203,13 @@
 				CB14AE612A36298B00CA596B /* Frameworks */,
 				CB14AE622A36298B00CA596B /* Resources */,
 				CB14AE872A36298C00CA596B /* Embed Watch Content */,
+				CB14AEA32A3629C700CA596B /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				CB14AE772A36298B00CA596B /* PBXTargetDependency */,
+				CB14AE9E2A3629C700CA596B /* PBXTargetDependency */,
 			);
 			name = WidgetPreviewSample;
 			productName = WidgetPreviewSample;
@@ -168,6 +233,23 @@
 			productReference = CB14AE742A36298B00CA596B /* WidgetPreviewSample Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CB14AE8E2A3629C600CA596B /* AppWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB14AEA02A3629C700CA596B /* Build configuration list for PBXNativeTarget "AppWidgetExtension" */;
+			buildPhases = (
+				CB14AE8B2A3629C600CA596B /* Sources */,
+				CB14AE8C2A3629C600CA596B /* Frameworks */,
+				CB14AE8D2A3629C600CA596B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppWidgetExtension;
+			productName = AppWidgetExtension;
+			productReference = CB14AE8F2A3629C600CA596B /* AppWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -182,6 +264,9 @@
 						CreatedOnToolsVersion = 15.0;
 					};
 					CB14AE732A36298B00CA596B = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					CB14AE8E2A3629C600CA596B = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
@@ -201,6 +286,7 @@
 			targets = (
 				CB14AE632A36298B00CA596B /* WidgetPreviewSample */,
 				CB14AE732A36298B00CA596B /* WidgetPreviewSample Watch App */,
+				CB14AE8E2A3629C600CA596B /* AppWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -221,6 +307,14 @@
 			files = (
 				CB14AE812A36298C00CA596B /* Preview Assets.xcassets in Resources */,
 				CB14AE7E2A36298C00CA596B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB14AE8D2A3629C600CA596B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB14AE9B2A3629C700CA596B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +339,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB14AE8B2A3629C600CA596B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB14AE972A3629C600CA596B /* AppWidgetBundle.swift in Sources */,
+				CB14AE992A3629C600CA596B /* AppWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -252,6 +355,11 @@
 			isa = PBXTargetDependency;
 			target = CB14AE732A36298B00CA596B /* WidgetPreviewSample Watch App */;
 			targetProxy = CB14AE762A36298B00CA596B /* PBXContainerItemProxy */;
+		};
+		CB14AE9E2A3629C700CA596B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB14AE8E2A3629C600CA596B /* AppWidgetExtension */;
+			targetProxy = CB14AE9D2A3629C700CA596B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -498,6 +606,65 @@
 			};
 			name = Release;
 		};
+		CB14AEA12A3629C700CA596B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M3DTZN9V9B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AppWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vonbelow.WidgetPreviewSample.AppWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB14AEA22A3629C700CA596B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M3DTZN9V9B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AppWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vonbelow.WidgetPreviewSample.AppWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -524,6 +691,15 @@
 			buildConfigurations = (
 				CB14AE892A36298C00CA596B /* Debug */,
 				CB14AE8A2A36298C00CA596B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB14AEA02A3629C700CA596B /* Build configuration list for PBXNativeTarget "AppWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB14AEA12A3629C700CA596B /* Debug */,
+				CB14AEA22A3629C700CA596B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
